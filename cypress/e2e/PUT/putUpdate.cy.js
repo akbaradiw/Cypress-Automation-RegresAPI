@@ -5,7 +5,7 @@ describe("ReqresAPI", () => {
       url: "https://reqres.in/api/users/2",
       body: {
         name: "jarwo",
-        job: "crusader",
+        job: "knight",
       },
     }).then((response) => {
       expect(response.status).to.equal(200);
@@ -16,7 +16,7 @@ describe("ReqresAPI", () => {
 
       expect(jsonData.name).to.equal("jarwo");
 
-      expect(jsonData.job).to.equal("crusader")
+      expect(jsonData.job).to.equal("knight")
     });
   });
 });
